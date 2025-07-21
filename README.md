@@ -112,6 +112,72 @@ A Windows batch file is provided for easy execution:
 
 ---
 
+## How does the program work?
+
+Jerry's Quick Mart POS is a simple, robust, and fully interactive console application. The user selects the customer type (Rewards Member or Regular), then can add or remove products from the cart, view totals, and checkout. The inventory is always updated after each purchase, and receipts are generated as .txt files. All data is persisted between sessions (inventory and transaction counter).
+
+### General Flow:
+1. The user selects the customer type.
+2. The main menu allows viewing inventory, adding/removing items, viewing the cart, clearing the cart, checking out, or cancelling.
+3. At checkout, the program calculates totals, tax, and member savings, then saves a receipt and updates the inventory.
+4. The process can be repeated for new transactions.
+
+## Project Structure
+
+- `Item`: Represents a product in the store, with prices, stock, and tax status.
+- `CartItem`: Represents an item in the shopping cart, with quantity and price logic.
+- `Cart`: Manages the shopping cart, calculations, and inventory updates.
+- `Inventory`: Loads and saves inventory from/to a text file, parses prices and stock.
+- `Receipt`: Generates and saves transaction receipts as .txt files.
+- `TransactionManager`: Handles transaction numbering and coordinates the transaction process.
+- `MainApp`: The main user interface and application flow (console-based).
+
+All logic is modular, clean, and easy to extend. The code is written in pure Java, with JUnit tests for all core logic.
+
+### Example Input Data (inventory.txt)
+```
+Milk: 5, $3.75, $3.50, Tax-Exempt
+Red Bull: 10, $4.30, $4.00, Taxable
+Flour: 1, $3.10, $2.75, Tax-Exempt
+```
+
+### Example Main Menu (Console)
+```
+=== MAIN MENU ===
+1. View inventory
+2. Add item to cart
+3. View cart
+4. Remove item from cart
+5. Clear cart
+6. Checkout and Print receipt
+7. Cancel transaction
+8. Exit
+Select an option: _
+```
+
+### Example Output (Receipt)
+```
+December 8, 2016
+TRANSACTION: 000001
+
+ITEM         QUANTITY   UNIT PRICE   TOTAL   
+Milk         2          $3.50        $7.00   
+Red Bull     3          $4.00        $12.00  
+Flour        1          $2.75        $2.75   
+
+************************************
+TOTAL NUMBER OF ITEMS SOLD: 6
+SUB-TOTAL: $21.75
+TAX (6.5%): $0.78
+TOTAL: $22.53
+CASH: $25.00
+CHANGE: $2.47
+
+************************************
+YOU SAVED: $1.75!
+```
+
+
 ## Object Oriented Design
 - Each class has a single responsibility (SRP):
   - `Item`: Product entity
@@ -123,3 +189,5 @@ A Windows batch file is provided for easy execution:
   - `MainApp`: User interface and flow
 - All logic is encapsulated and easily extendible.
 - The code is modular, clean, and ready for real-world use or further extension.
+
+
