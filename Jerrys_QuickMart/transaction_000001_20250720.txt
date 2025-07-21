@@ -1,0 +1,16 @@
+julio 20, 2025
+TRANSACTION: 000001
+
+ITEM         QUANTITY   UNIT PRICE   TOTAL   
+Chips        1          $1,79        $1,79   
+
+************************************
+TOTAL NUMBER OF ITEMS SOLD: 1
+SUB-TOTAL: $1,79
+TAX (6.5%): $0,12
+TOTAL: $1,91
+CASH: $10,00
+CHANGE: $8,09
+
+************************************
+YOU SAVED: $0,20!

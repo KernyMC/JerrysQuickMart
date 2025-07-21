@@ -1,0 +1,15 @@
+julio 20, 2025
+TRANSACTION: 000002
+
+ITEM         QUANTITY   UNIT PRICE   TOTAL   
+Soda         1          $1,25        $1,25   
+
+************************************
+TOTAL NUMBER OF ITEMS SOLD: 1
+SUB-TOTAL: $1,25
+TAX (6.5%): $0,08
+TOTAL: $1,33
+CASH: $10,00
+CHANGE: $8,67
+
+************************************

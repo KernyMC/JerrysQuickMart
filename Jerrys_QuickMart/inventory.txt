@@ -1,0 +1,8 @@
+Chips: 10, $1,99, $1,79, Taxable
+Butter: 7, $3,80, $3,60, Tax-Exempt
+Flour: 10, $3,10, $2,75, Tax-Exempt
+Soda: 7, $1,25, $1,10, Taxable
+Eggs: 6, $4,50, $4,20, Tax-Exempt
+Milk: 20, $3,75, $3,50, Tax-Exempt
+Red Bull: 7, $4,30, $4,00, Taxable
+Bread: 6, $2,50, $2,25, Tax-Exempt

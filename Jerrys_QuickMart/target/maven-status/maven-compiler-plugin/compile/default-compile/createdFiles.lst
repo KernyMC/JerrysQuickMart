@@ -1,0 +1,8 @@
+com\quickmart\app\Main.class
+com\quickmart\app\MainApp.class
+com\quickmart\app\CartItem.class
+com\quickmart\app\Inventory.class
+com\quickmart\app\Receipt.class
+com\quickmart\app\TransactionManager.class
+com\quickmart\app\Item.class
+com\quickmart\app\Cart.class
